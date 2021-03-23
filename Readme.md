@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Женя Романовская](https://up.htmlacademy.ru/adaptive/22/user/1640727).
-* Наставник: `Дмитрий Иовлев`.
+* Наставник: [Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker).
 
 ---
 
