@@ -29,47 +29,42 @@
         </nav>
       </div>
       <div class="header-content header-background-image">
-        <h1 class="header-content__title">Взгляните на жизнь иначе!</h1>
+        <h2 class="header-content__slogan">Взгляните на жизнь иначе!</h2>
         <img src="img/phone.png" width="320" height="286" alt="">
         <img src="img/screen.png" width="111" height="197" alt="">
         <a class="button header-content__link-appstore" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
         <ul class="market-list">
           <li class="market-list__item">
-            <a class="apple-market-icon" href="https://www.apple.com/ru/ios/app-store/">
-              <img src="https://placeholder.com/" alt="Apple-market">
-            </a>
+            <a class="apple-market-icon" href="https://www.apple.com/ru/ios/app-store/" aria-label="APP Store"></a>
           </li>
-          <li class="header-content__market-item">
-            <a class="android-market-icon" href="https://play.google.com/store">
-              <img src="https://placeholder.com/" alt="Android-market">
-            </a>
+          <li class="market-list__item">
+            <a class="android-market-icon" href="https://play.google.com/store" aria-label="Android"></a>
           </li>
-          <li class="header-content__market-item">
-            <a class="microsoft-market-icon" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
-              <img src="https://placeholder.com/" alt="Microsoft-market">
-            </a>
+          <li class="market-list__item">
+            <a class="microsoft-market-icon" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" aria-label="Microsoft"></a>
           </li>
         </ul>
           <h2>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</h2>
       </div>
     </header>
     <main class="page-main">
+      <h1 class="visually-hidden">Взгляните на жизнь иначе!</h1>
       <section class="advantages page-main__advantages">
-        <h2 class="advantages__title">
+        <p class="advantages__title">
           Устали от серости мегаполиса?
           Нам есть, что вам предложить!
-        </h2>
+        </p>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <h2 class="advantages__item-sublitle">Поднимает настроение</h2>
+            <h3 class="advantages__item-sublitle">Поднимает настроение</h3>
             <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantages__item">
-            <h2 class="advantages__item-sublitle">Меняет мир вокруг</h2>
+            <h3 class="advantages__item-sublitle">Меняет мир вокруг</h3>
             <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantages__item">
-            <h2 class="advantages__item-sublitle">Заводит новых друзей</h2>
+            <h3 class="advantages__item-sublitle">Заводит новых друзей</h3>
             <p class="advantages__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
@@ -79,103 +74,113 @@
           <a class="research__link" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
-      <section class="comments">
+      <section class="comments slider">
         <h2 class="visually-hidden">Отзывы</h2>
-        <ul class="comments__list">
-          <li class="comments__item">
+        <ul class="comments__list slider__list">
+          <li class="comments__item slider__item">
             <h3 class="comments__title">Николай Петров</h3>
             <p class="comments__subtitle">25 лет, водитель трамвая</p>
             <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
-          <li class="comments__item">
+          <li class="comments__item slider__item">
             <h3 class="comments__title">Николай Петров</h3>
             <p class="comments__subtitle">25 лет, водитель трамвая</p>
             <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
-          <li class="comments__item">
+          <li class="comments__item slider__item">
             <h3 class="comments__title">Николай Петров</h3>
             <p class="comments__subtitle">25 лет, водитель трамвая</p>
             <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
         </ul>
+        <p class="comments__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
       </section>
       <section class="tariff">
         <h2 class="visually-hidden">Тарифы</h2>
-        <table class="table-tariff">
+        <table class="table-tariff slider">
           <tr class="table-tariff__table-headline">
             <th class="table-tariff__header-cell">
               <span class="visually-hidden">Тариф</span>
             </th>
             <th class="table-tariff__header-cell">
-              <h2 class="table-tariff__headline-title">База</h2>
+              База
             </th>
             <th class="table-tariff__header-cell">
-              <h2 class="table-tariff__headline-title">Стандарт</h2>
+              Стандарт
             </th>
             <th class="table-tariff__header-cell">
-              <h2 class="table-tariff__headline-title">Анлим</h2>
+              Анлим
             </th>
           </tr>
           <tr class="table-tariff__table-headline">
             <th class="table-tariff__header-cell">
               <span class="visually-hidden">Цена</span>
             </th>
-            <th class="table-tariff__header-cell">
+            <td class="table-tariff__header-cell">
               <p class="table-tariff__price">1,99 USD</p>
-            </th>
-            <th class="table-tariff__header-cell">
+            </td>
+            <td class="table-tariff__header-cell">
               <p class="table-tariff__price">3,99 USD</p>
-            </th>
-            <th class="table-tariff__header-cell">
+            </td>
+            <td class="table-tariff__header-cell">
               <p class="table-tariff__price">9,99 USD</p>
-            </th>
+            </td>
           </tr>
           <tr class="table-tariff__table-line">
-            <td class="table-tariff__cell">
+            <th class="table-tariff__cell">
               Розовый фильтр
-            </td>
-            <td class="table-tariff__cell--yes">
+            </th>
+            <td class="table-tariff__cell table-tariff__cell--yes">
               <span class="visually-hidden">Да</span>
             </td>
-            <td class="table-tariff__cell--yes">
+            <td class="table-tariff__cell table-tariff__cell--yes">
               <span class="visually-hidden">Да</span>
             </td>
-            <td class="table-tariff__cell--yes">
+            <td class="table-tariff__cell table-tariff__cell--yes">
               <span class="visually-hidden">Да</span>
             </td>
           </tr>
           <tr class="table-tariff__table-line">
-            <td class="table-tariff__cell">
+            <th class="table-tariff__cell">
               Смайлики
-            </td>
-            <td class="table-tariff__cell--no">
+            </th>
+            <td class="table-tariff__cell table-tariff__cell--no">
               <span class="visually-hidden">Нет</span>
             </td>
-            <td class="table-tariff__cell--yes">
+            <td class="table-tariff__cell table-tariff__cell--yes">
               <span class="visually-hidden">Да</span>
             </td>
-            <td class="table-tariff__cell--yes">
+            <td class="table-tariff__cell table-tariff__cell--yes">
               <span class="visually-hidden">Да</span>
             </td>
           </tr>
           <tr class="table-tariff__table-line">
-            <td class="table-tariff__cell">
+            <th class="table-tariff__cell">
               Комментарии
-            </td>
-            <td class="table-tariff__cell--no">
+            </th>
+            <td class="table-tariff__cell table-tariff__cell--no">
               <span class="visually-hidden">Нет</span>
             </td>
-            <td class="table-tariff__cell--no">
+            <td class="table-tariff__cell table-tariff__cell--no">
               <span class="visually-hidden">Нет</span>
             </td>
-            <td class="table-tariff__cell--yes">
+            <td class="table-tariff__cell table-tariff__cell--yes">
               <span class="visually-hidden">Да</span>
             </td>
           </tr>
         </table>
+        <p class="tariff__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
       </section>
       <section class="contacts">
-        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <p class="contacts__subtitle">Звоните:</p>
         <a class="contacts__adress" href="tel:+78125556666">+7 (812) 555-66-66</a>
         <p class="contacts__subtitle">Пишите:</p>
@@ -190,17 +195,19 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__footer-logo" href="#"></a>
-        <ul class="footer-social-list">
-          <li class="footer-social-list__item">
-            <a href="#"></a>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+            <a class="social__link social__link--twitter" href="#" aria-label="Twitter"></a>
           </li>
-          <li class="footer-social-list__item">
-            <a href="#"></a>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#" aria-label="Facebook"></a>
           </li>
-          <li class="footer-social-list__item">
-            <a href="#"></a>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" aria-label="YouTube"></a>
           </li>
         </ul>
+        </div>
         <a class="page-footer__htmlacademy-link" href="#">Разработано</a>
       </div>
     </footer>
