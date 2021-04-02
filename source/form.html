@@ -5,7 +5,7 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
-    <header>
+    <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
           <img src="img/pink.svg" width="74" height="23" alt="Логотип">
@@ -32,11 +32,13 @@
         <h1 class="header-content__slogan">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </header>
-    <main>
+    <main class="page-main">
+      <div class="page-main__intro">
+        <p class="page-main__intro-text">Поделитесь своей историей и получите
+        шанс выиграть ценный приз — 1000
+        миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      </div>
       <form class="form" action="https://echo.htmlacademy.ru">
-        <p class="form__title">Поделитесь своей историей и получите
-          шанс выиграть ценный приз — 1000
-          миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Фамилия, Имя, Отчество</legend>
           <div>
@@ -56,27 +58,27 @@
           <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
           <ul class="form__checkbox-list">
             <li class="checkbox">
-              <input class="checkbox__input" type="checkbox" id="check-1" name="checkbox" checked>
+              <input class="checkbox__input" type="checkbox" id="check-1" name="selfie" checked>
               <label class="checkbox__label" for="check-1">Сделал селфи с акулой</label>
             </li>
             <li class="checkbox">
-              <input class="checkbox__input" type="checkbox" id="check-2" name="checkbox" checked>
+              <input class="checkbox__input" type="checkbox" id="check-2" name="beach" checked>
               <label class="checkbox__label" for="check-2">Обгорел на пляже</label>
             </li>
             <li class="checkbox">
-              <input class="checkbox__input" type="checkbox" id="check-3" name="checkbox">
+              <input class="checkbox__input" type="checkbox" id="check-3" name="Chuck_Norris">
               <label class="checkbox__label" for="check-3">Видел Чака Норриса</label>
             </li>
             <li class="checkbox">
-              <input class="checkbox__input" type="checkbox" id="check-4" name="checkbox">
+              <input class="checkbox__input" type="checkbox" id="check-4" name="souvenirs">
               <label class="checkbox__label" for="check-4">Накупил сувениров</label>
             </li>
             <li class="checkbox">
-              <input class="checkbox__input" type="checkbox" id="check-5" name="checkbox" checked>
+              <input class="checkbox__input" type="checkbox" id="check-5" name="tower" checked>
               <label class="checkbox__label" for="check-5">Удержал башню</label>
             </li>
             <li class="checkbox">
-              <input class="checkbox__input" type="checkbox" id="check-6" name="checkbox">
+              <input class="checkbox__input" type="checkbox" id="check-6" name="hotel">
               <label class="checkbox__label" for="check-6">Разгромил отель</label>
             </li>
           </ul>
@@ -94,24 +96,24 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--wrapper">
           <legend class="form__legend">С каким приложением путешествовали?</legend>
-          <ul class="form-list">
+          <ul class="form__radio-list">
             <li class="radiobutton">
-              <input class="radiobutton__input" type="radio" id="radiobutton-1" name="radiobutton" checked>
+              <input class="radiobutton__input" type="radio" id="radiobutton-1" name="radiobutton" value="ios" checked>
               <label class="radiobutton__label" for="radiobutton-1">Pink для iOS</label>
             </li>
             <li class="radiobutton">
-              <input class="radiobutton__input" type="radio" id="radiobutton-2" name="radiobutton">
+              <input class="radiobutton__input" type="radio" id="radiobutton-2" name="radiobutton" value="android">
               <label class="radiobutton__label" for="radiobutton-2">Pink на Android</label>
             </li>
             <li class="radiobutton">
-              <input class="radiobutton__input" type="radio" id="radiobutton-3" name="radiobutton">
+              <input class="radiobutton__input" type="radio" id="radiobutton-3" name="radiobutton" value="windows">
               <label class="radiobutton__label" for="radiobutton-3">Windows Phone</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Опишите свои эмоции</legend>
-          <textarea class="form__textarea" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" name="review"></textarea>
+          <textarea class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" name="review"></textarea>
         </fieldset>
         <button class="form__button" type="submit">Отправить форму</button>
         <p class="form__remark"><span>*</span>-обязательные поля</p>
