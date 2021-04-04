@@ -36,13 +36,13 @@
       <div class="page-main__intro">
         <p class="page-main__intro-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
-      <section class="photo">
-        <ul class="photo__list">
-          <li class="photo__item">
-            <div class="photo__image photo__image--best-photo">
+      <section class="photos">
+        <ul class="photos__list">
+          <li class="photos__item photo-card">
+            <div class="photo-card__image photo-card__image--best-photo">
               <img src="https://via.placeholder.com/320x137" alt="фотография">
             </div>
-            <div class="comments">
+            <div class="photo-card__comments comments">
               <b class="comments__name">Анна</b>
               <p class="comments__time">(5 минут назад)</p>
               <p class="comments__text">Прыгать или нет? Напишите в
@@ -54,11 +54,11 @@
               <button class="comments__like-button" type="button"></button>
             </div>
           </li>
-          <li class="photo__item">
-            <div class="photo__image">
+          <li class="photos__item">
+            <div class="photos__item photo-card">
               <img src="https://via.placeholder.com/280x180" alt="фотография">
             </div>
-            <div class="comments">
+            <div class="photo-card__comments comments">
               <b class="comments__name">Левон</b>
               <p class="comments__time">(5 часов назад)</p>
               <p class="comments__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -66,11 +66,11 @@
               <button class="comments__like-button" type="button"></button>
             </div>
           </li>
-          <li class="photo__item">
-            <div class="photo__image">
+          <li class="photos__item">
+            <div class="photos__item photo-card">
               <img src="https://via.placeholder.com/280x180" alt="фотография">
             </div>
-            <div class="comments">
+            <div class="photo-card__comments comments">
               <b class="comments__name">Антон</b>
               <p class="comments__time">(12 часов назад)</p>
               <p class="comments__text">Соседи будут рады!</p>
@@ -78,11 +78,11 @@
               <button class="comments__like-button" type="button"></button>
             </div>
           </li>
-          <li class="photo__item">
-            <div class="photo__image">
+          <li class="photos__item">
+            <div class="photos__item photo-card">
               <img src="https://via.placeholder.com/280x180" alt="фотография">
             </div>
-            <div class="comments">
+            <div class="photo-card__comments comments">
               <b class="comments__name">Борис</b>
               <p class="comments__time">(20 часов назад)</p>
               <p class="comments__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -90,11 +90,11 @@
               <button class="comments__like-button" type="button"></button>
             </div>
           </li>
-          <li class="photo__item">
-            <div class="photo__image">
+          <li class="photos__item">
+            <div class="photos__item photo-card">
               <img src="https://via.placeholder.com/280x180" alt="фотография">
             </div>
-            <div class="comments">
+            <div class="photo-card__comments comments">
               <b class="comments__name">Сергей</b>
               <p class="comments__time">(25 часов назад)</p>
               <p class="comments__text">Самая кубанская в мире!</p>
@@ -102,11 +102,11 @@
               <button class="comments__like-button" type="button"></button>
             </div>
           </li>
-          <li class="photo__item">
-            <div class="photo__image">
+          <li class="photos__item">
+            <div class="photos__item photo-card">
               <img src="https://via.placeholder.com/280x180" alt="фотография">
             </div>
-            <div class="comments">
+            <div class="photo-card__comments comments">
               <b class="comments__name">Максим</b>
               <p class="comments__time">(40 часов назад)</p>
               <p class="comments__text">Где снег-то?
@@ -115,11 +115,11 @@
               <button class="comments__like-button" type="button"></button>
             </div>
           </li>
-          <li class="photo__item">
-            <div class="photo__image">
+          <li class="photos__item">
+            <div class="photos__item photo-card">
               <img src="https://via.placeholder.com/280x180" alt="фотография">
             </div>
-            <div class="comments">
+            <div class="photo-card__comments comments">
               <b class="comments__name">Надежда</b>
               <p class="comments__time">(45 часов назад)</p>
               <p class="comments__text">Всем GM и взаимные лайки!</p>
@@ -135,31 +135,23 @@
         </h2>
         <form>
         <div class="photo-editor">
-          <label for="file"><img class="photo-editor__image" src="https://via.placeholder.com/280x374" alt="фотография"></label>
-          <input type="file" id="file" style="display:none">
+          <label class="photo-editor__label" for="file"><img class="photo-editor__image" src="https://via.placeholder.com/280x374" alt="фотография"></label>
+          <input class="photo-editor__input" type="file" id="file">
           <div class="editor-buttons">
             <ul class="editor-buttons__list">
               <li class="editor-buttons__item">
-                <button type="button" name="cropping"></button>
+                <button class="editor-button__button" type="button" aria-label="cropping"></button>
+                <input class="editor-buttons__range" type="range">
               </li>
               <li class="editor-buttons__item">
-                <button type="button" name="fill"></button>
+                <button class="editor-button__button" type="button" aria-label="fill"></button>
+                <input class="editor-buttons__range" type="range">
               </li>
               <li class="editor-buttons__item">
-                <button type="button" name="bright"></button>
+                <button class="editor-button__button" type="button" aria-label="bright"></button>
+                <input class="editor-buttons__range" type="range">
               </li>
             </ul>
-          </div>
-          <div class="range-controls">
-            <div>
-              <input type="range">
-            </div>
-            <div>
-              <input type="range">
-            </div>
-            <div>
-              <input type="range">
-            </div>
           </div>
           <button class="button your-photo__upload" type="submit">Запостить</button>
           <button class="button your-photo__cancel" type="reset">Отмена</button>
