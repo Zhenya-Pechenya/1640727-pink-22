@@ -8,16 +8,18 @@
   line-height: 30px;
 }
 
-.form__input::-webkit-input-placeholder {
+.form__input {
   color: @basic-font;
+  font: inherit;
   font-size: 18px;
   line-height: 30px;
 }
 
-.form__input::-moz-placeholder {
-  color: @basic-font;
+.form__input::placeholder {
+  color: rgba(40, 54, 69, 1);
   font-size: 18px;
   line-height: 30px;
+  opacity: 1;
 }
 
 .form__fieldset--wrapper {
@@ -30,19 +32,21 @@
   text-transform: uppercase;
 }
 
-.form__textarea::-webkit-input-placeholder {
+.form__textarea {
   color: @basic-font;
+  font: inherit;
   font-size: 18px;
   line-height: 30px;
 }
 
-.form__textarea::-moz-placeholder {
-  color: @basic-font;
+.form__textarea::placeholder {
+  color: rgba(40, 54, 69, 1);
   font-size: 18px;
   line-height: 30px;
 }
 
 .form__button {
+  font: inherit;
   background-color: @form-button-color;
   border: 2px solid @form-button-color;
   border-radius: 1px;
