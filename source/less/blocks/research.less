@@ -2,3 +2,23 @@
   color: @link-color;
   text-decoration: underline;
 }
+
+.research {
+  width: 310px;
+  height: 276px;
+  display: none;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .research {
+    display: block;
+  }
+
+  .research::before {
+    content: url="https://via.placeholder.com/238x276";
+    position: absolute;
+    right: 400px;
+  }
+}

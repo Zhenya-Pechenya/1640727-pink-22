@@ -2,12 +2,47 @@
   background-color: @basic-grey-wrapper;
 }
 
-.advantages__list {
-  list-style: none;
-}
-
 .advantages__item-subtitle {
   color: @black;
   font-weight: bold;
   font-size: 18px;
+}
+
+.advantages__list {
+  list-style: none;
+  position: relative;
+  margin-bottom: 350px;
+}
+
+.advantages__list::after {
+  content: url="https://via.placeholder.com/200x300";
+  position: absolute;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    margin: 0 auto;
+    width: 600px;
+  }
+
+  .advantages__list::after {
+    top: 0;
+    left: -200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    background: url="https://via.placeholder.com/200x300",
+      url="https://via.placeholder.com/200x300",
+      url="https://via.placeholder.com/200x300";
+    background-repeat: no-repeat;
+    padding-top: 350px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .advantages__list::after {
+    display: none;
+  }
 }

@@ -29,9 +29,8 @@
           </ul>
         </nav>
       </div>
-      <div class="header-content header-background-image">
+      <div class="header-content">
         <b class="header-content__slogan">Взгляните на жизнь иначе!</b>
-        <img src="https://via.placeholder.com/320x286" alt="изображение телефона">
         <a class="button header-content__link-appstore" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
         <ul class="market-list">
           <li class="market-list__item">
@@ -44,7 +43,7 @@
             <a class="market-list__link market-list__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" aria-label="Microsoft"></a>
           </li>
         </ul>
-          <p class="market-list__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="market-list__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </header>
     <main class="page-main">
@@ -77,7 +76,7 @@
       <section class="comments slider">
         <h2 class="visually-hidden">Отзывы</h2>
         <ul class="comments__list slider__list">
-          <li class="comments__item slider__item">
+          <li class="comments__item--active slider__item">
             <h3 class="comments__title">Николай Петров</h3>
             <p class="comments__subtitle">25 лет, водитель трамвая</p>
             <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -183,12 +182,20 @@
       </section>
       <section class="contacts">
         <h2 class="heading-level-2 contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-        <p class="contacts__subtitle">Звоните:</p>
-        <a class="contacts__adress" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        <p class="contacts__subtitle">Пишите:</p>
-        <a class="contacts__adress" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        <p class="contacts__subtitle">Приезжайте в гости:</p>
-        <p class="contacts__adress">ул. Большая Конюшенная, 19/8</p>
+        <div class="contacts__group">
+          <div>
+            <p class="contacts__subtitle">Звоните:</p>
+            <a class="contacts__adress" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </div>
+          <div>
+            <p class="contacts__subtitle">Пишите:</p>
+            <a class="contacts__adress" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div>
+            <p class="contacts__subtitle">Приезжайте в гости:</p>
+            <p class="contacts__adress">ул. Большая Конюшенная, 19/8</p>
+          </div>
+        </div>
       </section>
       <div class="map">
         <img src="https://via.placeholder.com/320x200" alt="Карта">

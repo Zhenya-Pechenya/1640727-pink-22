@@ -6,11 +6,25 @@
   list-style: none;
 }
 
+.comments__item {
+  display: none;
+}
+
 .comments__title {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   color: @black;
+}
+
+.comments__subtitle {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .comments__subtitle {
+    display: block;
+  }
 }
 
 .comments__text {
