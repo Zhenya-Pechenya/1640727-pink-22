@@ -1,9 +1,13 @@
 .header-content {
-  background-color: @basic-dark-wrapper;
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 320px;
+}
+
+@media (max-width: @tablet-width) {
+  .header-content {
+    background-color: @basic-dark-wrapper;
+  }
 }
 
 .header-content__slogan::after {
@@ -17,7 +21,6 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  padding-bottom: 300px;
 }
 
 @media (min-width: @tablet-width) {

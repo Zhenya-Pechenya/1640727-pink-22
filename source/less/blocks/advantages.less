@@ -11,7 +11,6 @@
 .advantages__list {
   list-style: none;
   position: relative;
-  margin-bottom: 350px;
 }
 
 .advantages__list::after {
@@ -21,13 +20,12 @@
 
 @media (min-width: @tablet-width) {
   .advantages__list {
-    margin: 0 auto;
-    width: 600px;
+    padding-left: 310px;
   }
 
   .advantages__list::after {
     top: 0;
-    left: -200px;
+    left: 0;
   }
 }
 
@@ -38,6 +36,7 @@
       url("https://via.placeholder.com/200x300");
     background-repeat: no-repeat;
     padding-top: 350px;
+    padding-left: 0;
     display: flex;
     margin: 0 auto;
   }

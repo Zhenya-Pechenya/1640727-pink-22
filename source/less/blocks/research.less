@@ -4,21 +4,27 @@
 }
 
 .research {
-  width: 310px;
-  height: 276px;
   display: none;
   position: relative;
-  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
   .research {
     display: block;
+    padding-left: 310px;
+    padding-bottom: 100px;
   }
 
   .research::before {
     content: url("https://via.placeholder.com/238x276");
     position: absolute;
-    right: 400px;
+    left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research {
+    padding-left: 369px;
+    padding-bottom: 150px;
   }
 }
