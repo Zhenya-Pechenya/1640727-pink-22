@@ -1,21 +1,15 @@
-.header-content {
+.header-content__wrapper {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-@media (max-width: @tablet-width) {
-  .header-content {
-    background-color: @basic-dark-wrapper;
-  }
-}
-
-.header-content__slogan::after {
-  content: url("https://via.placeholder.com/320x286");
-  position: absolute;
-  top: 40px;
-  left: 0;
-}
+// .header-content__slogan::after {
+//   content: url("https://via.placeholder.com/320x286");
+//   position: absolute;
+//   top: 40px;
+//   left: 0;
+// }
 
 .header-content__slogan {
   font-weight: 300;
@@ -28,10 +22,10 @@
     display: none;
   }
 
-  .header-content {
-    background-image: url("https://via.placeholder.com/320x286");
-    background-repeat: no-repeat;
-  }
+  // .header-content {
+  //   background-image: url("https://via.placeholder.com/320x286");
+  //   background-repeat: no-repeat;
+  // }
 
   .header-content__slogan {
     padding-bottom: 0;
