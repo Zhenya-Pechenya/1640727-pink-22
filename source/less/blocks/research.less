@@ -11,24 +11,29 @@
 @media (min-width: @tablet-width) {
   .research {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
+  }
+
+  .research::before {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    content: url("https://via.placeholder.com/238x276");
   }
 
   .research__wrapper {
     grid-column-start: 2;
     grid-column-end: 3;
   }
-
-  .research__image {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .research {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
+  }
+
+  .research__wrapper {
+    grid-column-start: 2;
+    grid-column-end: 4;
   }
 }

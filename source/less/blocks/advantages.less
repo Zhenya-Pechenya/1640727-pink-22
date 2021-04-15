@@ -11,6 +11,7 @@
 .advantages__list {
   list-style: none;
   position: relative;
+  padding: 0;
 }
 
 .advantages__list::after {
@@ -20,12 +21,18 @@
 
 @media (min-width: @tablet-width) {
   .advantages__list {
-    padding-left: 310px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .advantages__item {
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 
   .advantages__list::after {
-    top: 0;
-    left: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 }
 
@@ -36,13 +43,11 @@
       url("https://via.placeholder.com/200x300");
     background-repeat: no-repeat;
     padding-top: 350px;
-    padding-left: 0;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
   }
 
-  .advantages__list::after {
-    display: none;
+  .advantages__item {
+    grid-column: auto;
   }
 }
