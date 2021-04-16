@@ -1,9 +1,15 @@
 .comments {
   background-color: @white;
+  padding-top: 300px;
 }
 
 .comments__list {
   list-style: none;
+  padding: 0;
+}
+
+.comments__item {
+  display: none;
 }
 
 .comments__title {
@@ -11,6 +17,32 @@
   line-height: 30px;
   font-weight: bold;
   color: @black;
+}
+
+.comments__title--bottom {
+  display: none;
+}
+
+.comments__subtitle {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .comments {
+    padding-top: 0;
+  }
+
+  .comments__title--bottom {
+    display: block;
+  }
+
+  .comments__title--top {
+    display: none;
+  }
+
+  .comments__subtitle {
+    display: block;
+  }
 }
 
 .comments__text {

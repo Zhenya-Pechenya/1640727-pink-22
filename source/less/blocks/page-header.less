@@ -1,4 +1,27 @@
 .page-header {
+  background-color: @basic-dark-wrapper;
   background-image: url("../img/back-mobile-index.jpg");
+  background-size: cover;
   color: @white;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+.page-header__wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    background-image: url("../img/back-tablet.jpg");
+    background-color: transparent;
+    background-size: cover;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    background-image: url("../img/back-desktop.jpg");
+    background-size: cover;
+  }
 }
