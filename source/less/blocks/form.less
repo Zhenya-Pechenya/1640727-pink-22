@@ -9,16 +9,19 @@
 
 .form__fieldset--checkbox {
   order: 2;
+  position: relative;
 }
 
 .form__fieldset--checkbox::after {
   content: "";
-  color: @basic-grey-wrapper;
+  position: absolute;
+  background-color: @basic-grey-wrapper;
   width: 100vw;
   top: 0;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: -1;
 }
 
 .form__fieldset--contacts {
@@ -27,6 +30,19 @@
 
 .form__fieldset--app {
   order: 4;
+  position: relative;
+}
+
+.form__fieldset--app::after {
+  content: "";
+  position: absolute;
+  background-color: @basic-grey-wrapper;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
 .form__fieldset--review {
@@ -44,6 +60,10 @@
     margin-top: 66px;
   }
 
+  .form__fieldset--app::after {
+    display: none;
+  }
+
   .form__fieldset--contacts {
     order: unset;
     margin: 0;
@@ -54,6 +74,10 @@
     order: unset;
     margin: 0;
     margin-top: 66px;
+  }
+
+  .form__fieldset--checkbox::after {
+    display: none;
   }
 
   .form__fieldset--review {
