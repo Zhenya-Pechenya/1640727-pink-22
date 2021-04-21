@@ -37,31 +37,57 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__intro container">
-        <p class="page-main__intro-text">Поделитесь своей историей и получите
-        шанс выиграть ценный приз — 1000
-        миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-      </div>
-      <form class="form" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__fieldset form__fieldset--name">
-          <div class="container">
-            <legend class="visually-hidden">Фамилия, Имя, Отчество</legend>
-            <div>
-              <label class="form__label" for="surname">Фамилия:</label>
-              <input class="form__input" type="text" placeholder="Укажите фамилию*" id="surname" name="surname">
-            </div>
-            <div>
-              <label class="form__label" for="name">Имя:</label>
-              <input class="form__input" type="text" placeholder="Введите ваше имя*" id="name" name="name">
-            </div>
-            <div>
-              <label class="form__label" for="middle-name">Отчество:</label>
-              <input class="form__input" type="text" placeholder="Ну и отчество тоже" id="middle-name" name="middle-name">
-            </div>
-          </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--wrapper form__fieldset--checkbox">
-          <div class="container">
+      <div class="container">
+        <div class="page-main__intro">
+          <p class="page-main__intro-text">Поделитесь своей историей и получите
+          шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        </div>
+        <form class="form" action="https://echo.htmlacademy.ru">
+          <fieldset class="form__fieldset form__fieldset--name">
+              <legend class="visually-hidden">Фамилия, Имя, Отчество</legend>
+              <div>
+                <label class="form__label" for="surname">Фамилия:</label>
+                <input class="form__input" type="text" placeholder="Укажите фамилию*" id="surname" name="surname">
+              </div>
+              <div>
+                <label class="form__label" for="name">Имя:</label>
+                <input class="form__input" type="text" placeholder="Введите ваше имя*" id="name" name="name">
+              </div>
+              <div>
+                <label class="form__label" for="middle-name">Отчество:</label>
+                <input class="form__input" type="text" placeholder="Ну и отчество тоже" id="middle-name" name="middle-name">
+              </div>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--wrapper  form__fieldset--app">
+            <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <ul class="form__radio-list">
+              <li class="radiobutton">
+                <input class="radiobutton__input" type="radio" id="radiobutton-1" name="radiobutton" value="ios" checked>
+                <label class="radiobutton__label" for="radiobutton-1">Pink для iOS</label>
+              </li>
+              <li class="radiobutton">
+                <input class="radiobutton__input" type="radio" id="radiobutton-2" name="radiobutton" value="android">
+                <label class="radiobutton__label" for="radiobutton-2">Pink на Android</label>
+              </li>
+              <li class="radiobutton">
+                <input class="radiobutton__input" type="radio" id="radiobutton-3" name="radiobutton" value="windows">
+                <label class="radiobutton__label" for="radiobutton-3">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--contacts">
+              <legend class="form__legend form__legend--hidden">Контактная информация</legend>
+              <div class="form__phone-wrapper">
+                <label class="form__label" for="phone-number">Номер телефона</label>
+                <input class="form__input form__input--tel" type="text" placeholder="Номер, пожалуйста" id="phone-number" name="phone-number">
+              </div>
+              <div class="form__email-wrapper">
+                <label class="form__label" for="e-mail">Адрес почты</label>
+                <input class="form__input form__input--email" type="text" placeholder="Введите почту*" id="e-mail" name="e-mail">
+              </div>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--wrapper form__fieldset--checkbox">
             <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
             <ul class="form__checkbox-list">
               <li class="checkbox">
@@ -89,52 +115,18 @@
                 <label class="checkbox__label" for="check-6">Разгромил отель</label>
               </li>
             </ul>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--review">
+              <legend class="form__legend">Опишите свои эмоции</legend>
+              <textarea class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" name="review"></textarea>
+          </fieldset>
+          <div class="form__wrapper--submit">
+            <button class="form__button" type="submit">Отправить форму</button>
+            <p class="form__remark"><span class="form__remark-symbol">*</span>-обязательные поля</p>
           </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--contacts">
-          <div class="container">
-            <legend class="form__legend form__legend--hidden">Контактная информация</legend>
-            <div class="form__phone-wrapper">
-              <label class="form__label" for="phone-number">Номер телефона</label>
-              <input class="form__input form__input--tel" type="text" placeholder="Номер, пожалуйста" id="phone-number" name="phone-number">
-            </div>
-            <div class="form__email-wrapper">
-              <label class="form__label" for="e-mail">Адрес почты</label>
-              <input class="form__input form__input--email" type="text" placeholder="Введите почту*" id="e-mail" name="e-mail">
-            </div>
-          </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--wrapper  form__fieldset--app">
-          <div class="container">
-            <legend class="form__legend">С каким приложением путешествовали?</legend>
-            <ul class="form__radio-list">
-              <li class="radiobutton">
-                <input class="radiobutton__input" type="radio" id="radiobutton-1" name="radiobutton" value="ios" checked>
-                <label class="radiobutton__label" for="radiobutton-1">Pink для iOS</label>
-              </li>
-              <li class="radiobutton">
-                <input class="radiobutton__input" type="radio" id="radiobutton-2" name="radiobutton" value="android">
-                <label class="radiobutton__label" for="radiobutton-2">Pink на Android</label>
-              </li>
-              <li class="radiobutton">
-                <input class="radiobutton__input" type="radio" id="radiobutton-3" name="radiobutton" value="windows">
-                <label class="radiobutton__label" for="radiobutton-3">Windows Phone</label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--review">
-          <div class="container">
-            <legend class="form__legend">Опишите свои эмоции</legend>
-            <textarea class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" name="review"></textarea>
-          </div>
-        </fieldset>
-        <div class="container form__wrapper--submit">
-          <button class="form__button" type="submit">Отправить форму</button>
-          <p class="form__remark"><span class="form__remark-symbol">*</span>-обязательные поля</p>
-        </div>
-      </form>
-      <div class="pop-up pop-up-error">
+        </form>
+      </div>
+      <div class="pop-up">
         <div class="pop-up__text-wrapper">
           <b class="pop-up__title">Что-то пошло
             не так!</b>
@@ -146,7 +138,7 @@
           <button class="form__button" type="button">ОК</button>
         </div>
       </div>
-      <div class="pop-up pop-up-success">
+      <div class="pop-up">
         <div class=" pop-up__text-wrapper">
           <b class="pop-up__title">Ваша заявка
             отправлена</b>
