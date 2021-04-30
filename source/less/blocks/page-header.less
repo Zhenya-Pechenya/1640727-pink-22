@@ -11,11 +11,19 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.page-header__logo img {
+  margin-top: 22px;
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
     background-image: url("../img/back-tablet.jpg");
     background-color: transparent;
     background-size: cover;
+  }
+  .page-header__logo img {
+    margin-top: 27px;
+    margin-bottom: 43px;
   }
 }
 
@@ -23,5 +31,9 @@
   .page-header {
     background-image: url("../img/back-desktop.jpg");
     background-size: cover;
+  }
+  .page-header__logo img {
+    margin-top: 44px;
+    margin-bottom: 45px;
   }
 }
