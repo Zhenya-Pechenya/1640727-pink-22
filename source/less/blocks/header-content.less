@@ -15,21 +15,34 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  padding-bottom: 300px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -100px;
+    bottom: 0;
+    z-index: -1;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../img/back-mobile-index.jpg");
+    background-size: cover;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .header-content__slogan::after {
-    display: none;
+  .header-content__slogan::before {
+    background-image: url("../img/back-desktop.jpg");
+    background-size: cover;
   }
 
   // .header-content {
   //   background-image: url("https://via.placeholder.com/320x286");
   //   background-repeat: no-repeat;
   // }
-
-  .header-content__slogan {
-    padding-bottom: 0;
-  }
 }
 
 .header-content__link-appstore {
