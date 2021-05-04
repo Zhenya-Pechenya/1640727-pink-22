@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 300px;
 }
 
 // .header-content__slogan::after {
@@ -23,20 +24,20 @@
     content: "";
     display: block;
     position: absolute;
-    top: -100px;
+    top: -66px;
     bottom: 0;
     z-index: -1;
     width: 100vw;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url("../img/back-mobile-index.jpg");
+    background-image: url("../img/header-phone-img-mobile.png"), url("../img/back-mobile-index.jpg");
     background-size: cover;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .header-content__slogan::before {
-    background-image: url("../img/back-desktop.jpg");
+  .header-content::before {
+    background-image: url("../img/header-phone-img-tablet.png"), url("../img/back-desktop.jpg");
     background-size: cover;
   }
 

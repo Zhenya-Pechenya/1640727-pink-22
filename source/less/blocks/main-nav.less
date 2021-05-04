@@ -17,11 +17,23 @@
   .main-nav__nav-list {
     display: none;
   }
+
+  .main-nav__toggle-icon--open {
+    display: block;
+  }
+
+  .main-nav__toggle-icon--close {
+    display: none;
+  }
 }
 
+.main-nav__toggle-icon--open {
+  display: none;
+}
 
 .main-nav__item {
-  box-shadow: 0 1px 0 black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid @black;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -57,7 +69,7 @@
   }
 
   .main-nav__item {
-    box-shadow: none;
+    border: none;
   }
 
   .main-nav {
