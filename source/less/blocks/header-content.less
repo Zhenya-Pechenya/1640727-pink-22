@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 300px;
 }
 
 // .header-content__slogan::after {
@@ -31,20 +30,68 @@
     left: 50%;
     transform: translateX(-50%);
     background-image: url("../img/header-phone-img-mobile.png"), url("../img/back-mobile-index.jpg");
-    background-size: cover;
+    background-size: 320px 286px, cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .header-content::before {
-    background-image: url("../img/header-phone-img-tablet.png"), url("../img/back-desktop.jpg");
-    background-size: cover;
+  .header-content {
+    position: relative;
+    margin-top: 200px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -300px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-image:
+        url("../img/header-phone-img-tablet.png"),
+        url("../img/back-desktop.jpg");
+      background-size: 660px 545px, cover;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+    }
   }
+
+  .header-content__slogan {
+    font-size: 40px;
+    line-height: 48px;
+    padding: 0;
+    padding-bottom: 39px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .header-content__wrapper {
+    width: 300px;
+  }
+
 
   // .header-content {
   //   background-image: url("https://via.placeholder.com/320x286");
   //   background-repeat: no-repeat;
   // }
+}
+
+@media (min-width: @desctop-width) {
+  .header-content::before {
+    display: none;
+  }
+
+  .header-content {
+    background-image:
+      url("../img/header-phone-img-desctop.png"),
+      url("../img/back-desktop.jpg");
+    background-size: 1050px 645px, cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
 }
 
 .header-content__link-appstore {
