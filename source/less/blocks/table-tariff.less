@@ -23,8 +23,60 @@
   font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
+  height: 45px;
+  width: 152px;
+  border: 2px solid @border-color;
+  border-collapse: collapse;
+  position: relative;
+
+  &::after {
+    content: attr(data-title);
+    position: absolute;
+  }
 }
 
 .table-tariff__1-cell {
   display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .table-tariff__cell::after {
+    display: none;
+  }
+
+  .table-tariff__1-cell {
+    display: block;
+  }
+}
+
+.table-tariff__cell--yes {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/yes.svg");
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 21px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 12px;
+  }
+}
+
+.table-tariff__cell--no {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/no.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 9px;
+  }
 }

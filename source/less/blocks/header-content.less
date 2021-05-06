@@ -29,7 +29,9 @@
     width: 100vw;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url("../img/header-phone-img-mobile.png"), url("../img/back-mobile-index.jpg");
+    background-image:
+      url("../img/header-phone-img-mobile.png"),
+      url("../img/back-mobile-index.jpg");
     background-size: 320px 286px, cover;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -79,7 +81,7 @@
   // }
 }
 
-@media (min-width: @desctop-width) {
+@media (min-width: @desktop-width) {
   .header-content::before {
     display: none;
   }
@@ -91,6 +93,7 @@
     background-size: 1050px 645px, cover;
     background-repeat: no-repeat;
     background-position: center bottom;
+    margin: -110px;
   }
 }
 

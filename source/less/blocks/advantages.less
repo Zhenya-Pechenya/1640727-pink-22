@@ -15,8 +15,10 @@
 }
 
 .advantages__list::after {
-  content: url("https://via.placeholder.com/200x300");
+  content: url("../img/hello-img-mobile.png");
   position: absolute;
+  width: 157px;
+  height: 320px;
 }
 
 @media (min-width: @tablet-width) {
@@ -33,18 +35,27 @@
   .advantages__list::after {
     grid-column-start: 1;
     grid-column-end: 2;
+    content: url("../img/hello-img-tablet.png");
+    position: absolute;
+    width: 268px;
+    height: 547px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages__list {
-    background: url("https://via.placeholder.com/200x300"),
-      url("https://via.placeholder.com/200x300"),
-      url("https://via.placeholder.com/200x300");
+    background: url("../img/screen-1-desktop.png"),
+      url("../img/screen-2-desktop.png"),
+      url("../img/screen-3-desktop.png");
     background-repeat: no-repeat;
+    background-position: top left, top center, top right;
     padding-top: 350px;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .advantages__item {
