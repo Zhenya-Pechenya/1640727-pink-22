@@ -14,17 +14,25 @@
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
     position: relative;
+    padding-top: 102px;
+    padding-bottom: 138px;
   }
 
   .research::before {
-    grid-column-start: 1;
-    grid-column-end: 2;
     position: absolute;
     content: "24";
+    top: 100px;
     background-image: url("../img/img-clock.png");
     background-repeat: no-repeat;
     background-size: 238px 276px;
     background-position: center;
+    width: 238px;
+    height: 276px;
+    font-size: 96px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 300px;
+    color: @link-color;
   }
 
   .research__wrapper {
@@ -36,6 +44,24 @@
 @media (min-width: @desktop-width) {
   .research {
     grid-template-columns: repeat(3, 1fr);
+    position: relative;
+  }
+
+  .research::before {
+    position: absolute;
+    content: "24";
+    background-image: url("../img/img-clock.png");
+    background-repeat: no-repeat;
+    background-size: 298px 345px;
+    background-position: center;
+    width: 298px;
+    height: 345px;
+    font-size: 120px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 370px;
+    color: @link-color;
+    top: 0;
   }
 
   .research__wrapper {

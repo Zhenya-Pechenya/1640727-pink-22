@@ -41,12 +41,12 @@
 @media (min-width: @tablet-width) {
   .header-content {
     position: relative;
-    margin-top: 200px;
+    padding-top: 110px;
 
     &::before {
       content: "";
       position: absolute;
-      top: -300px;
+      top: -110px;
       bottom: 0;
       right: 0;
       left: 0;
@@ -84,16 +84,6 @@
 @media (min-width: @desktop-width) {
   .header-content::before {
     display: none;
-  }
-
-  .header-content {
-    background-image:
-      url("../img/header-phone-img-desctop.png"),
-      url("../img/back-desktop.jpg");
-    background-size: 1050px 645px, cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    margin: -110px;
   }
 }
 
